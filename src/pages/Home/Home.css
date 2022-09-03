@@ -21,7 +21,8 @@
     z-index: -1;
 }
 .home-heading{
-	font-family: 'Montserrat';
+    font-family: 'Alfa Slab One';
+    color: #003865;
 	width: 900px;
 	position: absolute;
     left: 25%;
@@ -29,16 +30,14 @@
     text-align: left;
 	transform: translate(-25%,-55%);
 }
-.home-heading {
-    font-family: 'Alfa Slab One';
-    color: #003865;
-}
-.home-heading .home-detail{
-    font-size: 23px;
+/* .home-heading {
+} */
+.home-detail{
+    font-size: 1.4em;
     font-weight: bold;
     font-family:'Lato';
 	letter-spacing: 1px;
-	color: #B93160;
+	color: #a32a54;
 }
 .home-heading h3{
 	font-family:'Alfa Slab One';
@@ -88,8 +87,8 @@
 
 @media(max-width:1190px){
     #home{
-		background-size: 1150px !important;
-		
+		background-size: 1190px !important;
+		height: 650px;
 	}
 	.home-heading{
 		left: 50%;
@@ -103,30 +102,56 @@
     .home-heading h1{
         font-size: 3rem;
     }
-    .home-heading .home-detail{
-        font-size: 1rem;
+    .home-detail{
+        font-size: 1.4em;
+    }
+    .home-btn{
+        margin: 0 auto;
+    }
+}
+
+@media(max-width:1100px){
+    .home-btn{
+      margin: 0 auto;
     }
 }
 
 @media(max-width:970px){
-    #home{
+    /* #home{
 		height: 650px;
-	}
+	} */
 	.home-heading{
 		left: 50%;
 		top: 50%;
 		transform: translate(-50%,-50%);
     }
+    .home-btn{
+        margin: 0 auto;
+    }
 }
 
 @media(max-width:600px){
     .home-heading{
-      width:60%;
+      width: 60%;
+    }
+    .home-detail{
+        text-align: left;
+        font-style: italic;
+        font-size: 1em;
+    }
+    .home-heading h1{
+        font-size: 1.7rem;
     }
 }
 
-@media(max-width:1100px){
-    .home-tab{
-      margin: 0;
+@media(max-width:400px){
+    .home-heading h1{
+        font-size: 1.2rem;
+    }
+    .home-heading h3{
+        font-size: 2rem;
+    }
+    .home-btn{
+        font-size: 1.1rem;
     }
 }

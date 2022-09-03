@@ -1,14 +1,11 @@
-import "@stripe/stripe-js";
-
 import Navbar from './components/Navbar';
 import Home from './pages/Home/Home';
 import Games from './pages/Games/Games';
-// import Details from './pages/Details/Details';
-import About from './pages/About/About';
 import Contact from './pages/Contact/Contact';
 
-import './App.css';
 import Whatsapp from './pages/Whatsapp/Whatsapp';
+
+import './App.css';
 
 function App() {
   return (
@@ -16,8 +13,6 @@ function App() {
       <Navbar />
       <Home />
       <Games />
-      {/* <Details /> */}
-      <About />
       <Contact />
       <Whatsapp />
     </div>

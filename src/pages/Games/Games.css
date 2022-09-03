@@ -1,6 +1,6 @@
 #games{
-    width:100%;
-    height:150vh;
+    width: 100%;
+    height: 175vh;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -11,16 +11,18 @@
     padding-bottom: 100px;
 }
 #games h1{
-    color: #A5C9CA;
+    color: #D4F6CC;
     font-size: 3rem;
-    font-family:'Alfa Slab One';
+    font-family: 'Alfa Slab One';
     letter-spacing: 2px;
+    margin-bottom: 0;
 }
 #games h3{
     color: #A5C9CA;
     font-size: 2.5rem;
     font-family:'Lato';
     letter-spacing: 2px;
+    margin-top: 0;
 }
 .game-box{
     display: flex;
@@ -29,7 +31,7 @@
 }
 .single-game{
     background-color: #2C3333;
-    width:250px;
+    width: 250px;
     height: 600px;
     margin: 20px;
     border-radius: 10px;
@@ -39,7 +41,7 @@
 }
 .single-game-img{
     width: 100%;
-    height: 60%;
+    height: 40%;
 }
 .single-game-img img{
     padding: 15px;
@@ -52,8 +54,9 @@
     box-shadow: 2px 2px 12px #E7F6F2;
 }
 .single-game-text{
+    top: 0;
     width: 100%;
-    height: 40%;
+    height: 50%;
     background-color: #2C3333;
     display: flex;
     justify-content: center;
@@ -67,9 +70,9 @@
 }
 .single-game-text p{
     margin: 0px;
-    color: #3CCF4E;
-    font-size: 1.1rem;
-    font-family:'Bebas Neue';
+    color: #D4F6CC;
+    font-size: 1rem;
+    font-family:'Lato';
     letter-spacing: 1px;
     display: block;
     display: -webkit-box;
@@ -80,15 +83,41 @@
     text-overflow: ellipsis;
 }
 .single-game-text p:hover{
-    color:#D4F6CC;
+    color: #3CCF4E;
 }
-.single-game-text a{
-    margin-top:15px ;
+.single-game-text p:nth-child(8){
+    color: #3CCF4E;
+    margin-top: 15px;
+}
+div div:nth-child(4) .single-game-text p:nth-child(4){
+    color: #3CCF4E;
+    margin: 15px auto;
+}
+.single-game-text p:nth-child(8):hover,
+div div:nth-child(4) .single-game-text p:nth-child(4):hover{
+    color: #D4F6CC;
+}
+.venue {
+    background-color: #2C3333;
+    padding: 15px;
+    margin-top: 15px;
+    border-radius: 10px;
+}
+.venue p{
+    font-size: 1rem;
+    font-family:'Lato';
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    color: #D4F6CC;
+}
+.venue p span{
+    color: #A5C9CA;
+    border-bottom: 2px solid #D4F6CC;
 }
 
 @media(max-width:1190px){
     #games{
-          height:auto;
+          height: auto;
     }
     .game-box{
           flex-wrap: wrap;
@@ -101,15 +130,37 @@
     }
 }
 
-@media(max-width:970px){
+/* @media(max-width:970px){
     #games{
-      margin-bottom: 100px;
+      margin-bottom: 200px;
+    }
+} */
+
+@media(max-width:600px){
+    #games h1{
+        font-size: 2.5rem;
+    }
+    #games h3{
+        font-size: 1.4rem;
+        margin-top: 10px;
+    }
+    .single-game{
+      width: 100%;
+      height: 400px;
+    }
+    .game-box div:nth-child(4){
+        height: 520px;
     }
 }
 
 @media(max-width:400px){
-    .single-game{
-      width: 100%;
-      height: 400px;
+    #games h1{
+        font-size: 2rem;
+    }
+    #games h3{
+        font-size: 0.9rem;
+    }
+    .venue p{
+        font-size: 0.52rem;
     }
 }

@@ -1,4 +1,3 @@
-import React from 'react'
 
 export default function SingleGame(props) {
   return (
@@ -10,7 +9,10 @@ export default function SingleGame(props) {
         <h2>{props.title}</h2>
         <p>{props.day}</p>
         <p>{props.time1}</p>
+        <p>{props.address}</p>
+        <p>{props.optional}</p>
         <p>{props.time2}</p>
+        <p>{props.time3}</p>
         <p>Ole Rømer Skolen</p>
       </div>
     </div>
