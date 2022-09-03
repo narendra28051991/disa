@@ -11,7 +11,7 @@ export default function Home() {
           <h1 className="title">
             <span className="title-word title-word-1">Denmark</span>
             <span className="title-word title-word-2"> Indian</span>
-            <span className="title-word title-word-3"> Telugu</span>
+            <span className="title-word title-word-3"> Sports</span>
             <span className="title-word title-word-4"> Association</span>
           </h1>
         </div>
