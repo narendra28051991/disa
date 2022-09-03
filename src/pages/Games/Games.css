@@ -1,0 +1,111 @@
+#games{
+    width:100%;
+    height:120vh;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 40px ;
+    background-color: #395B64;
+    padding-bottom: 100px;
+}
+#games h1{
+    color: #A5C9CA;
+    font-size: 3rem;
+    font-family:'Alfa Slab One';
+    letter-spacing: 2px;
+}
+.game-box{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.single-game{
+    background-color: #2C3333;
+    width:250px;
+    height: 400px;
+    margin: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.4s ease-in-out;
+    position: relative;
+}
+.single-game-img{
+    width: 100%;
+    height: 60%;
+}
+.single-game-img img{
+    padding: 15px;
+    margin-top: 40px;
+    width: 100%;
+    height: 100%;
+}
+.single-game:hover{
+    border: 1px solid #374045;
+    box-shadow: 2px 2px 12px #E7F6F2;
+}
+.single-game-text{
+    width: 100%;
+    height: 40%;
+    background-color: #2C3333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+.single-game-text h2{
+    color: #EF5B0C;
+    letter-spacing: 2px;
+}
+.single-game-text p{
+    margin: 0px;
+    color: #3CCF4E;
+    font-size: 1.1rem;
+    font-family:'Bebas Neue';
+    letter-spacing: 1px;
+    display: block;
+    display: -webkit-box;
+    max-width: 80%;
+    margin-top: 5px;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 10px;
+}
+.single-game-text p:hover{
+    color:#D4F6CC;
+}
+.single-game-text a{
+    margin-top:15px ;
+}
+
+@media(max-width:1190px){
+    #games{
+          height:auto;
+    }
+    .game-box{
+          flex-wrap: wrap;
+      }
+    .single-game{
+          flex-grow: 1;
+      }
+    .single-game-img img{
+          object-fit:contain;
+    }
+}
+
+@media(max-width:970px){
+    #games{
+      margin-bottom: 100px;
+    }
+}
+
+@media(max-width:400px){
+    .single-game{
+      width: 100%;
+      height: 400px;
+    }
+}

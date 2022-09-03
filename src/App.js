@@ -1,23 +1,25 @@
-import logo from './logo.svg';
+import "@stripe/stripe-js";
+
+import Navbar from './components/Navbar';
+import Home from './pages/Home/Home';
+import Games from './pages/Games/Games';
+// import Details from './pages/Details/Details';
+import About from './pages/About/About';
+import Contact from './pages/Contact/Contact';
+
 import './App.css';
+import Whatsapp from './pages/Whatsapp/Whatsapp';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar />
+      <Home />
+      <Games />
+      {/* <Details /> */}
+      <About />
+      <Contact />
+      <Whatsapp />
     </div>
   );
 }
