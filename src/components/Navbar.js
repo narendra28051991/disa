@@ -31,9 +31,9 @@ export default function Navbar() {
             </label>
             <ul className="menu">
                 <li><Link to="home" smooth={true} duration={1000}>Home</Link></li>
-                <li><Link to="games" smooth={true} duration={1000}>Games</Link></li>
+                <li><Link to="games" smooth={true} duration={1000}>Calendar</Link></li>
                 {/* <li><Link to="details" smooth={true} duration={1000}>Details</Link></li> */}
-                <li><Link to="about" smooth={true} duration={1000}>About</Link></li>
+                {/* <li><Link to="about" smooth={true} duration={1000}>About</Link></li> */}
                 <li><Link to="contact" smooth={true} duration={1000}>Contact</Link></li>
             </ul>
         </nav>

@@ -1,12 +1,12 @@
 #games{
     width:100%;
-    height:120vh;
+    height:150vh;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-top: 40px ;
+    padding-top: 100px;
     background-color: #395B64;
     padding-bottom: 100px;
 }
@@ -14,6 +14,12 @@
     color: #A5C9CA;
     font-size: 3rem;
     font-family:'Alfa Slab One';
+    letter-spacing: 2px;
+}
+#games h3{
+    color: #A5C9CA;
+    font-size: 2.5rem;
+    font-family:'Lato';
     letter-spacing: 2px;
 }
 .game-box{
@@ -24,7 +30,7 @@
 .single-game{
     background-color: #2C3333;
     width:250px;
-    height: 400px;
+    height: 600px;
     margin: 20px;
     border-radius: 10px;
     overflow: hidden;
@@ -68,12 +74,10 @@
     display: block;
     display: -webkit-box;
     max-width: 80%;
-    margin-top: 5px;
     -webkit-line-clamp: 4;
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
-    margin-bottom: 10px;
 }
 .single-game-text p:hover{
     color:#D4F6CC;

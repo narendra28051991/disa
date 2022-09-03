@@ -8,7 +8,10 @@ export default function SingleGame(props) {
       </div>
       <div className="single-game-text">
         <h2>{props.title}</h2>
-        <p>Taastrup</p>
+        <p>{props.day}</p>
+        <p>{props.time1}</p>
+        <p>{props.time2}</p>
+        <p>Ole Rømer Skolen</p>
       </div>
     </div>
   )
