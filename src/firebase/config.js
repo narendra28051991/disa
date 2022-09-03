@@ -1,13 +1,13 @@
 import { initializeApp } from 'firebase/app';
 
 const firebaseConfig = {
-    apiKey: "AIzaSyCu6w3SykRLpiCvIHyzpw2heQWbH8Zup8g",
-    authDomain: "disa-sports.firebaseapp.com",
-    projectId: "disa-sports",
-    storageBucket: "disa-sports.appspot.com",
-    messagingSenderId: "1090121961659",
-    appId: "1:1090121961659:web:4da35792d4acc3c2ba199e"
-  };
+  apiKey: "AIzaSyCqvmr5Voqi7fUDwxjxAQxbOoS8BJO9Wgk",
+  authDomain: "disa-games.firebaseapp.com",
+  projectId: "disa-games",
+  storageBucket: "disa-games.appspot.com",
+  messagingSenderId: "549677356631",
+  appId: "1:549677356631:web:4e5a7f10cc44d59a76b512"
+};
 
 // init firebase
 initializeApp(firebaseConfig)
