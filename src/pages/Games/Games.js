@@ -10,7 +10,14 @@ import GameFour from '../../images/badminton.png';
 export default function Games() {
   return (
     <div id="games">
-      <h1>SEASON 2022-2023</h1>
+
+      <div className="calendar">
+        <div className="content">
+          <h1>SEASON 2022-2023</h1>
+          <h1>SEASON 2022-2023</h1>
+        </div>
+      </div>
+      
       <h3>Valid Period: September-2022 to June-2023</h3>
       <div className="game-box">
         <SingleGame
@@ -44,9 +51,14 @@ export default function Games() {
           time3="Free Play 19:00 - 20:00"
         />
       </div>
+
       <div className="venue">
         <p><span>Venue 1:</span>  Ole Rømer-Skolen, Gadehavegårdsvej 1, 2630 Taastrup</p>
         <p><span>Venue 2:</span>  Hall, Charlottegårdsvej 1, 2640 Hedehusene</p>
+      </div>
+
+      <div className="link">
+        <h2 className="lineUp"><a href="https://forms.gle/7fbb6mwZL9CeqyXZ7" target="_blank" rel="noreferrer">Click to register</a></h2>
       </div>
     </div>
   )

@@ -6,9 +6,9 @@ export default function Contact() {
       <h1>GET IN TOUCH</h1>
       <form>
         <p>Nanda Kumar</p>
-        <p>nanreddy.ch@gmail.com</p>
+        <p>disa.denmark@gmail.com</p>
         <p>Click the WhatsApp icon</p>
-        <button>CONTACT</button>
+        <button>JOIN US</button>
       </form>
     </div>
   )

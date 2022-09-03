@@ -6,7 +6,9 @@ export default function SingleGame(props) {
         <img src={props.image} alt="" />
       </div>
       <div className="single-game-text">
-        <h2>{props.title}</h2>
+        <div className="line">
+          <h2 className="pop-outin">{props.title}</h2>
+        </div>
         <p>{props.day}</p>
         <p>{props.time1}</p>
         <p>{props.address}</p>

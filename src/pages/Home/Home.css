@@ -30,8 +30,6 @@
     text-align: left;
 	transform: translate(-25%,-55%);
 }
-/* .home-heading {
-} */
 .home-detail{
     font-size: 1.4em;
     font-weight: bold;
@@ -39,27 +37,15 @@
 	letter-spacing: 1px;
 	color: #a32a54;
 }
-.home-heading h3{
+/* .home-heading h3{
 	font-family:'Alfa Slab One';
 	font-size: 3rem;
     text-align: center;
 	margin:0px;
 	letter-spacing: 6px;
     color:#6e323c;
-}
-.home-heading h1{
-    width: fit-content;
-	font-family:'Alfa Slab One';
-	font-size: 2.5rem;
-	margin:0px;
-	letter-spacing: 2px;
-	color:#003865;
-    border-bottom: 2px solid #3d2514;
-}
-.home-heading h1 span{
-    border-bottom: none;
-    margin-left: 100px;
-}
+} */
+
 .home-tab{
     display: flex;
     margin-top: 40px;
@@ -85,6 +71,88 @@
     border: 2px solid #003865;
 }
 
+/* Static Colour Change Effect */
+
+.title-word {
+    animation: color-animation 4s linear infinite;
+}
+.title-word-1 {
+    --color-1: #16213E;
+    --color-2: #533483;
+    --color-3: #62374E;
+}
+.title-word-2 {
+    --color-1: #A27B5C;
+    --color-2: #774360;
+    --color-3: #51557E;
+}
+.title-word-3 {
+    --color-1: #4C0027;
+    --color-2: #2D4263;
+    --color-3: #C84B31;
+}
+.title-word-4 {
+    --color-1: #1E5128;
+    --color-2: #346751;
+    --color-3: #0B5269;
+}
+@keyframes color-animation {
+    0%    {color: var(--color-1)}
+    32%   {color: var(--color-1)}
+    33%   {color: var(--color-2)}
+    65%   {color: var(--color-2)}
+    66%   {color: var(--color-3)}
+    99%   {color: var(--color-3)}
+    100%  {color: var(--color-1)}
+}
+
+/* Here are just some visual styles. 🖌 */
+.container {
+    display: grid;
+    text-align: left;
+}
+.title {
+    font-family: 'Alfa Slab One';
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+}
+
+/* Text Colour Animation Effect */
+.text-center {
+    font-family: 'Alfa Slab One';
+	font-size: 3rem;
+    text-align: center;
+	letter-spacing: 6px;
+}
+.animate-character
+{
+    margin: 0;
+    text-transform: uppercase;
+    background-image: linear-gradient(
+        -225deg,
+        #231557 0%,
+        #44107a 29%,
+        #ff1361 67%,
+        #fff800 100%
+    );
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    fill: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 2s linear infinite;
+    display: inline-block;
+}
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+
 @media(max-width:1190px){
     #home{
 		background-size: 1190px !important;
@@ -96,11 +164,8 @@
         transform: translate(-50%,-50%);
         text-align: center;
     }
-    .home-heading h2{
-        font-size: 1.5rem;
-    }
-    .home-heading h1{
-        font-size: 3rem;
+    .title{
+        font-size: 2.5rem;
     }
     .home-detail{
         font-size: 1.4em;
@@ -117,10 +182,7 @@
 }
 
 @media(max-width:970px){
-    /* #home{
-		height: 650px;
-	} */
-	.home-heading{
+    .home-heading{
 		left: 50%;
 		top: 50%;
 		transform: translate(-50%,-50%);
@@ -139,16 +201,16 @@
         font-style: italic;
         font-size: 1em;
     }
-    .home-heading h1{
+    .title{
         font-size: 1.7rem;
     }
 }
 
 @media(max-width:400px){
-    .home-heading h1{
+    .title{
         font-size: 1.2rem;
     }
-    .home-heading h3{
+    .animate-character{
         font-size: 2rem;
     }
     .home-btn{
