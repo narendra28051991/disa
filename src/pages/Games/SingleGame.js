@@ -15,7 +15,7 @@ export default function SingleGame(props) {
         <p>{props.optional}</p>
         <p>{props.time2}</p>
         <p>{props.time3}</p>
-        <p>Ole Rømer Skolen</p>
+        <p>{props.venue}</p>
       </div>
     </div>
   )

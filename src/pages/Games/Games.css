@@ -75,11 +75,11 @@
     color: #3CCF4E;
 }
 .single-game-text p:nth-child(8){
-    color: #3CCF4E;
+    color: #FBDF07;
     margin-top: 15px;
 }
 div div:nth-child(4) .single-game-text p:nth-child(4){
-    color: #3CCF4E;
+    color: #FBDF07;
     margin: 15px auto;
 }
 .single-game-text p:nth-child(8):hover,
@@ -100,8 +100,7 @@ div div:nth-child(4) .single-game-text p:nth-child(4):hover{
     color: #D4F6CC;
 }
 .venue p span{
-    color: #A5C9CA;
-    border-bottom: 2px solid #D4F6CC;
+    color: #FBDF07;
 }
 
 
@@ -247,10 +246,16 @@ div div:nth-child(4) .single-game-text p:nth-child(4):hover{
     }
 }
 
+@media(max-width:970px){
+    .content h1{
+        font-size: 2.7rem;
+    }
+}
 
 @media(max-width:600px){
     .content h1{
-        font-size: 1.6rem;
+        font-size: 1.7rem;
+        letter-spacing: 1px;
     }
     #games h3{
         font-size: 1.4rem;
@@ -265,6 +270,18 @@ div div:nth-child(4) .single-game-text p:nth-child(4):hover{
     }
     .lineUp a{
         font-size: 1.5rem;
+    }
+}
+
+@media(max-width:428px){
+    .content h1{
+        font-size: 1.2rem;
+    }
+    #games h3{
+        font-size: 1rem;
+    }
+    .venue p{
+        font-size: 0.6rem;
     }
 }
 

@@ -1,10 +1,17 @@
 import { Link } from "react-scroll";
 
+import Image from "../../images/Disa.png";
+
 import './Home.css';
 
 export default function Home() {
   return (
     <div id="home">
+
+      <div className="logo-big">
+        <img src={Image} alt="logo full display" />
+      </div>
+      
       <div className="home-heading">
 
         <div className="container">
@@ -31,6 +38,7 @@ export default function Home() {
         <div className="home-tab">
             <button className="home-btn"><Link to="games" smooth={true} duration={1000}>REGISTRATIONS OPEN</Link></button>
         </div>
+
       </div>
     </div>
   )

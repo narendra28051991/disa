@@ -37,15 +37,6 @@
 	letter-spacing: 1px;
 	color: #a32a54;
 }
-/* .home-heading h3{
-	font-family:'Alfa Slab One';
-	font-size: 3rem;
-    text-align: center;
-	margin:0px;
-	letter-spacing: 6px;
-    color:#6e323c;
-} */
-
 .home-tab{
     display: flex;
     margin-top: 40px;
@@ -69,6 +60,15 @@
     transition: all ease 0.5s;
     color: #3d2514;
     border: 2px solid #003865;
+}
+.logo-big{
+    width: 100%;
+    position: absolute;
+    top: 20%;
+}
+.logo-big img{
+    width: 20%;
+    margin-left: 75%;
 }
 
 /* Static Colour Change Effect */
@@ -148,10 +148,19 @@
 }
 @keyframes textclip {
   to {
-    background-position: 200% center;
+    background-position: -200% center;
   }
 }
 
+
+@media(max-width:1200px){
+    .logo-big{
+        top: 30%;
+    }
+    .logo-big img{
+        width: 14%;
+    }
+}
 
 @media(max-width:1190px){
     #home{
@@ -173,11 +182,15 @@
     .home-btn{
         margin: 0 auto;
     }
+    .logo-big img{
+        width: 15%;
+        margin-left: 80%;
+    }
 }
 
 @media(max-width:1100px){
-    .home-btn{
-      margin: 0 auto;
+    .logo-big img{
+        width: 12%;
     }
 }
 
@@ -187,8 +200,14 @@
 		top: 50%;
 		transform: translate(-50%,-50%);
     }
-    .home-btn{
-        margin: 0 auto;
+    .logo-big img{
+        width: 10%;
+    }
+}
+
+@media(max-width:700px){
+    .logo-big{
+        display: none;
     }
 }
 
@@ -202,18 +221,24 @@
         font-size: 1em;
     }
     .title{
-        font-size: 1.7rem;
+        font-size: 1.6rem;
+    }
+}
+
+@media(max-width:428px){
+    .title{
+        font-size: 1.3rem;
+    }
+    .home-btn{
+        font-size: 1.2rem;
     }
 }
 
 @media(max-width:400px){
     .title{
-        font-size: 1.2rem;
-    }
-    .animate-character{
-        font-size: 2rem;
+        font-size: 1.1rem;
     }
     .home-btn{
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
 }

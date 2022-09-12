@@ -64,9 +64,6 @@ nav .menu-btn,
 	  height: 65px;
 	  padding: 0px 30px;
 	}
-	.logo img{
-	  width:70px;
-	}
 	.menu{
 	  display:none;
 	  position:absolute;
@@ -137,5 +134,11 @@ nav .menu-btn,
 	}
 	nav .menu-btn:checked ~ .menu{
 	  display: block;
+	}
+}
+
+@media(max-width:600px){
+	.logo img{
+		height: 40px;
 	}
 }

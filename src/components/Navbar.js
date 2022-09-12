@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-scroll";
 
-import Logo from '../images/sport.png';
+import Logo from '../images/Disa.svg';
 
 import './Navbar.css';
 
@@ -23,7 +23,7 @@ export default function Navbar() {
     return (
         <nav className={ nav ? "nav active" : "nav" }>
             <Link to="main" className="logo" smooth={true} duration={2000}>
-                <img src={Logo} alt="carroms" />
+                <img src={Logo} alt="logo white" />
             </Link>
             <input type="checkbox" className="menu-btn" id="menu-btn" />
             <label className="menu-icon" htmlFor="menu-btn">
@@ -32,8 +32,6 @@ export default function Navbar() {
             <ul className="menu">
                 <li><Link to="home" smooth={true} duration={1000}>Home</Link></li>
                 <li><Link to="games" smooth={true} duration={1000}>Calendar</Link></li>
-                {/* <li><Link to="details" smooth={true} duration={1000}>Details</Link></li> */}
-                {/* <li><Link to="about" smooth={true} duration={1000}>About</Link></li> */}
                 <li><Link to="contact" smooth={true} duration={1000}>Contact</Link></li>
             </ul>
         </nav>

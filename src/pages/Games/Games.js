@@ -26,6 +26,7 @@ export default function Games() {
           day="Monday"
           time1="18:00 - 19:00"
           time2="19:00 - 20:00"
+          venue="Canteen (Venue 1)"
         />
         <SingleGame
           image={GameTwo}
@@ -33,28 +34,31 @@ export default function Games() {
           day="Tuesday"
           time1="18:00 - 19:00"
           time2="19:00 - 20:00"
+          venue="Canteen (Venue 1)"
         />
         <SingleGame
           image={GameThree}
           title="Family Yoga"
           day="Saturday"
           time1="09:30 - 10:30"
+          venue="Canteen (Venue 1)"
         />
         <SingleGame
           image={GameFour}
           title="Badminton"
           day="Wednesday"
           time1="Free Play 17:00 - 18:00"
-          address="Charlottegårdsvej"
+          address="Hall (Venue 1)"
           optional="Friday"
           time2="Training 18:00 - 19:00"
           time3="Free Play 19:00 - 20:00"
+          venue="Hall (Venue 2)"
         />
       </div>
 
       <div className="venue">
         <p><span>Venue 1:</span>  Ole Rømer-Skolen, Gadehavegårdsvej 1, 2630 Taastrup</p>
-        <p><span>Venue 2:</span>  Hall, Charlottegårdsvej 1, 2640 Hedehusene</p>
+        <p><span>Venue 2:</span>  Charlottegårdsvej 1, 2640 Hedehusene</p>
       </div>
 
       <div className="link">
