@@ -5,7 +5,7 @@ export default function Contact() {
     <div id="contact">
       <h1>GET IN TOUCH</h1>
       <form>
-        <p>Nanda Kumar</p>
+        <p>Nanda Kumar Reddy Chejerla</p>
         <p>disa.denmark@gmail.com</p>
         <p>Click the WhatsApp icon</p>
         <button>JOIN US</button>

@@ -2,6 +2,7 @@ nav{
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
+	padding: 0 7%;
 	position: fixed;
 	left: 0;
 	top: 0;
@@ -16,6 +17,9 @@ nav.active{
 }
 nav ul{
 	display: flex;
+}
+.logo img{
+    width: 10%;
 }
 .active{
     background-color: #003865;
@@ -55,6 +59,13 @@ nav .menu-btn,
 	display: none;
 }
 
+@media(max-width:1190px){
+	nav{
+	  height: 65px;
+	  padding: 0 10%;
+	}
+}
+
 @media(max-width:1100px){
 	.menu-icon{
 	  display: block;
@@ -62,7 +73,10 @@ nav .menu-btn,
 	nav{
 	  justify-content: space-between;
 	  height: 65px;
-	  padding: 0px 30px;
+	  padding: 0 8%;
+	}
+	.logo img{
+		width: 8%;
 	}
 	.menu{
 	  display:none;
@@ -137,8 +151,14 @@ nav .menu-btn,
 	}
 }
 
-@media(max-width:600px){
+@media(max-width:1100px){
 	.logo img{
-		height: 40px;
+		width: 20%;
+	}
+}
+
+@media(max-width:970px){
+	.logo img{
+		width: 12%;
 	}
 }

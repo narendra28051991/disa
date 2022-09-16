@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-scroll";
 
-import Logo from '../images/Disa.svg';
+import Logo from '../images/Disa.png';
 
 import './Navbar.css';
 

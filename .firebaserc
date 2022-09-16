@@ -1,5 +1,7 @@
 {
   "projects": {
-    "default": "disa-games"
-  }
+    "default": "disa-denmark"
+  },
+  "targets": {},
+  "etags": {}
 }
