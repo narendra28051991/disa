@@ -6,6 +6,8 @@ import GameOne from '../../images/carrom.png';
 import GameTwo from '../../images/chess.png';
 import GameThree from '../../images/yoga.png';
 import GameFour from '../../images/badminton.png';
+import Mobilepay from '../../images/mobilepay.png';
+import BankTransfer from '../../images/banktransfer.png';
 
 export default function Games() {
   return (
@@ -63,6 +65,26 @@ export default function Games() {
 
       <div className="link">
         <h2 className="lineUp"><a href="https://forms.gle/7fbb6mwZL9CeqyXZ7" target="_blank" rel="noreferrer">Click to register</a></h2>
+      </div>
+
+      <div className="payment">
+        <h2 className="payment-title">Payment Details</h2>
+        <div>
+          <img src={Mobilepay} alt="mobile pay" />
+          <ul>
+            <li>box02714</li>
+          </ul>
+        </div>
+        <div>
+          <img src={BankTransfer} alt="bank transfer" />
+          <div>
+            <ul>
+              <li><span>Reg. Nr.</span> 2277</li>
+              <li><span>Kontonr.</span> 9031961316</li>
+              <li><span>IBAN</span> DK 85 2000 9031 9613 16</li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
   )
